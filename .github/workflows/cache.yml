@@ -23,5 +23,5 @@ jobs:
             ${{ runner.os }}-pip-
       - run: pip install -r requirements.txt
       - name: confirm cache
-        if: steps.generateCache.outputs.cache-hit == true
+        if: steps.generateCache.outputs.cache-hit == 'true'
         run: cache entry found!
