@@ -17,4 +17,4 @@ jobs:
       - run: pip install -r requirements.txt
       - name: test cache
         if: steps.generateCache.outputs.cache-hit == true
-        run: a cache with this key found!
+        run: cache entry found!
